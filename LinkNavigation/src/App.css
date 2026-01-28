@@ -1,0 +1,26 @@
+.link-container {
+  background-color: #1e293b;
+  padding: 15px;
+  text-align: center;
+}
+
+.link-container a {
+  margin: 0 20px;
+  color: #e0e7ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-container a:hover {
+  color: #38bdf8;
+}
+
+.page {
+  margin: 40px auto;
+  width: 60%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
