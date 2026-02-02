@@ -76,6 +76,8 @@ Navigation is performed using clickable links displayed in the navigation bar. T
 ---
 
 ## Screenshots  
+<img width="1764" height="852" alt="image" src="https://github.com/user-attachments/assets/4ee0997d-3167-4826-a869-2ebfad1fdd63" />
+<img width="1714" height="776" alt="image" src="https://github.com/user-attachments/assets/de96a5d3-4fb6-4d76-9f1b-89ff833c175e" />
 
 ---
 
