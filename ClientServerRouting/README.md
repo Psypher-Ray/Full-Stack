@@ -67,6 +67,8 @@ Navigation is performed only by typing the URL directly in the browser address b
 - A 404 page is shown for invalid URLs.
 
 ## Screenshots
+<img width="1707" height="885" alt="image" src="https://github.com/user-attachments/assets/bc5fa610-f896-4f72-831b-a025b5020eca" />
+<img width="1719" height="817" alt="image" src="https://github.com/user-attachments/assets/c1cc5e6a-a7f4-412d-8a36-5bbaa83dd3f3" />
 
 ---
 
