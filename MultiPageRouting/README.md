@@ -76,6 +76,9 @@ Navigation is performed using routing links, and the corresponding component is 
 ---
 
 ## Screenshots  
+<img width="1919" height="807" alt="image" src="https://github.com/user-attachments/assets/59be2136-6031-4ae2-b632-6c12e44f4e46" />
+<img width="1915" height="700" alt="image" src="https://github.com/user-attachments/assets/72c2faad-f598-44ce-bd9c-5b97ba943b7c" />
+<img width="1915" height="711" alt="image" src="https://github.com/user-attachments/assets/d05e4ec7-b081-48cb-baae-6d1dfa261036" />
 
 ---
 
