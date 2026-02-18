@@ -1,6 +1,14 @@
-import React, { Suspense, lazy } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import React, { Suspense, lazy, useEffect, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
+
+/* -------- Lazy Imports -------- */
 
 const Home = lazy(() =>
   import("./Pages").then((module) => ({ default: module.Home }))
@@ -14,25 +22,60 @@ const Contact = lazy(() =>
   import("./Pages").then((module) => ({ default: module.Contact }))
 );
 
+const Loader = lazy(() =>
+  import("./Pages").then((module) => ({ default: module.Loader }))
+);
+
+/* -------- Route Wrapper -------- */
+
+function AnimatedRoutes() {
+  const location = useLocation();
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 800); // loader visible for 800ms
+
+    return () => clearTimeout(timer);
+  }, [location]);
+
+  return (
+    <div className="card">
+      {loading ? (
+        <Loader />
+      ) : (
+        <Suspense fallback={<Loader />}>
+          <Routes location={location}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
+      )}
+    </div>
+  );
+}
+
+/* -------- Main App -------- */
+
 function App() {
   return (
-    <div className="app-container">
-      <h1>Route-Based Lazy Loading</h1>
+    <Router>
+      <div className="container">
+        <h1 className="title">Route-Based Lazy Loading</h1>
 
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
+        <nav className="nav">
+          <NavLink to="/" end>Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
+        </nav>
 
-      <Suspense fallback={<div className="loading">Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Suspense>
-    </div>
+        <AnimatedRoutes />
+      </div>
+    </Router>
   );
 }
 
