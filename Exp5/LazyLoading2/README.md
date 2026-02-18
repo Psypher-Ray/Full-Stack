@@ -107,7 +107,9 @@ Animated loading indicator
 
 Responsive design
 
-Screenshots
+ 🤖 Screenshots
+ <img width="1919" height="937" alt="Screenshot 2026-02-18 122045" src="https://github.com/user-attachments/assets/f5b6b17f-4da0-43ae-938e-02481b3e1abb" />
+
 
 📊 Advantages of Route-Based Lazy Loading
 
