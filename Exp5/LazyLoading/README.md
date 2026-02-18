@@ -113,7 +113,10 @@ Clean UI styling
 
 Code splitting optimization
 
-Screenshots
+🤖 Screenshots
+<img width="1915" height="932" alt="image" src="https://github.com/user-attachments/assets/5f285e45-eca1-425a-b196-5b86d96efbf4" />
+<img width="1917" height="929" alt="image" src="https://github.com/user-attachments/assets/5074b6fa-6da9-4fdf-9f9d-8fa4ec046e9d" />
+
 
 📊 Advantages
 
@@ -138,5 +141,6 @@ The component loads dynamically.
 Network tab shows separate JavaScript chunks.
 
 ✅ Conclusion
+
 
 The experiment successfully demonstrates component lazy loading using React.lazy() and Suspense. This approach improves frontend performance by loading components only when needed, reducing the initial bundle size and enhancing overall user experience.
