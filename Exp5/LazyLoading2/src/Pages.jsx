@@ -1,28 +1,34 @@
 import React from "react";
 
-export function Home() {
+/* ========= Loader ========= */
+export const Loader = () => {
   return (
-    <div className="page">
-      <h2>Home Page</h2>
-      <p>Welcome to the Home page.</p>
+    <div className="loader-container">
+      <div className="spinner"></div>
+      <p>Loading...</p>
     </div>
   );
-}
+};
 
-export function About() {
-  return (
-    <div className="page">
-      <h2>About Page</h2>
-      <p>This page is loaded lazily for better performance.</p>
-    </div>
-  );
-}
+/* ========= Pages ========= */
 
-export function Contact() {
-  return (
-    <div className="page">
-      <h2>Contact Page</h2>
-      <p>This page is also loaded lazily.</p>
-    </div>
-  );
-}
+export const Home = () => (
+  <>
+    <h2>Home</h2>
+    <p>Welcome to the minimal lazy loading demo.</p>
+  </>
+);
+
+export const About = () => (
+  <>
+    <h2>About</h2>
+    <p>This page is loaded only when you visit it.</p>
+  </>
+);
+
+export const Contact = () => (
+  <>
+    <h2>Contact</h2>
+    <p>This component is also lazy loaded.</p>
+  </>
+);
